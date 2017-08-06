@@ -8,11 +8,16 @@ import android.widget.Toast;
 
 public class Main2Activity extends AppCompatActivity {
     private long lastKeytime;
+    private MainApp mainApp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+        mainApp = (MainApp) getApplication();
+        Log.i("test","username"+mainApp.usertname);
+        Log.i("test","data3"+mainApp.data3);
+        Log.i("test","data4"+mainApp.data4);
 
     }
     public void  doExit(View view){
